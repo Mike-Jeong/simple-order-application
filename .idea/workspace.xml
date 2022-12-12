@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29662908-6eab-410f-bb91-29402170c0dd" name="Changes" comment="JPA 사용을 위한 Hibernate 구현체 생성">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="29662908-6eab-410f-bb91-29402170c0dd" name="Changes" comment="Entity 와 repository 기초 작업">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ProductOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/QuitController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/type/ApplicationMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/type/CustomError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/type/MenuCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/InputManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DBTransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/DBTransactionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/HibernateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/HibernateManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +61,11 @@
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.exception" />
+      <recent name="org.example.util" />
+      <recent name="org.example" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672239307477</updated>
-      <workItem from="1672239309530" duration="3618000" />
+      <workItem from="1672239309530" duration="4761000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init">
       <created>1672239817267</created>
@@ -81,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672240579223</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Entity 와 repository 기초 작업">
+      <created>1672332380176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672332380176</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Init" />
     <MESSAGE value="JPA 사용을 위한 Hibernate 구현체 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="JPA 사용을 위한 Hibernate 구현체 생성" />
+    <MESSAGE value="Entity 와 repository 기초 작업" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entity 와 repository 기초 작업" />
   </component>
 </project>
