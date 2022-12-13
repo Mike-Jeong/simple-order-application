@@ -28,4 +28,20 @@ public class Product {
         this.availableStock = availableStock;
     }
 
+    public int getProductId() {
+        return productId;
+    }
+
+    public String getProductName() {
+        return productName;
+    }
+
+    public int getProductPrice() {
+        return productPrice;
+    }
+
+    public int getAvailableStock() {
+        return availableStock;
+    }
+
 }

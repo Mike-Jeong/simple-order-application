@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29662908-6eab-410f-bb91-29402170c0dd" name="Changes" comment="Entity 와 repository 기초 작업">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/OrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ProductOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/QuitController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/type/ApplicationMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/type/CustomError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/type/MenuCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/InputManager.java" afterDir="false" />
+    <list default="true" id="29662908-6eab-410f-bb91-29402170c0dd" name="Changes" comment="- 프로그램 시작점 설정 (OrderApplication)&#10;- 각 요청을 처리할 컨트롤러 생성 (ProductOrderController, QuitController)&#10;- 각 요청과 요청별 커멘드를 보다 효과적으로 관리하기 위한 enum(ApplicationMenu, MenuCommand) 생성&#10;- 에러를 효과적으로 처리하기 위해 CustomException 생성">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AddCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AddCartServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ProductOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ProductOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/type/ApplicationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/type/ApplicationMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/type/CustomError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/type/CustomError.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +48,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/min/IdeaProjects/order/src/main/java/org/example",
+    "last_opened_file_path": "/Users/min/IdeaProjects/order/src/main/java/org/example/service",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example/service" />
       <recent name="$PROJECT_DIR$/src/main/java/org/example" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
@@ -75,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672239307477</updated>
-      <workItem from="1672239309530" duration="4761000" />
+      <workItem from="1672239309530" duration="6509000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init">
       <created>1672239817267</created>
@@ -98,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672332380176</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- 프로그램 시작점 설정 (OrderApplication)&#10;- 각 요청을 처리할 컨트롤러 생성 (ProductOrderController, QuitController)&#10;- 각 요청과 요청별 커멘드를 보다 효과적으로 관리하기 위한 enum(ApplicationMenu, MenuCommand) 생성&#10;- 에러를 효과적으로 처리하기 위해 CustomException 생성">
+      <created>1672335042333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672335042333</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +123,7 @@
     <MESSAGE value="Project Init" />
     <MESSAGE value="JPA 사용을 위한 Hibernate 구현체 생성" />
     <MESSAGE value="Entity 와 repository 기초 작업" />
-    <option name="LAST_COMMIT_MESSAGE" value="Entity 와 repository 기초 작업" />
+    <MESSAGE value="- 프로그램 시작점 설정 (OrderApplication)&#10;- 각 요청을 처리할 컨트롤러 생성 (ProductOrderController, QuitController)&#10;- 각 요청과 요청별 커멘드를 보다 효과적으로 관리하기 위한 enum(ApplicationMenu, MenuCommand) 생성&#10;- 에러를 효과적으로 처리하기 위해 CustomException 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 프로그램 시작점 설정 (OrderApplication)&#10;- 각 요청을 처리할 컨트롤러 생성 (ProductOrderController, QuitController)&#10;- 각 요청과 요청별 커멘드를 보다 효과적으로 관리하기 위한 enum(ApplicationMenu, MenuCommand) 생성&#10;- 에러를 효과적으로 처리하기 위해 CustomException 생성" />
   </component>
 </project>

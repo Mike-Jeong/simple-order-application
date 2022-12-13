@@ -4,12 +4,15 @@ import org.example.controller.Controller;
 import org.example.controller.ProductOrderController;
 import org.example.controller.QuitController;
 import org.example.exception.CustomException;
+import org.example.repository.ProductRepositoryImpl;
+import org.example.service.AddCartServiceImpl;
+import org.example.util.HibernateManager;
 
 import java.util.Arrays;
 
 public enum ApplicationMenu {
 
-    ORDER(new MenuCommand("주문", new String[]{"o", "order"}), new ProductOrderController()),
+    ORDER(new MenuCommand("주문", new String[]{"o", "order"}), new ProductOrderController(new AddCartServiceImpl(new ProductRepositoryImpl(HibernateManager.getInstance())))),
     QUIT(new MenuCommand("종료", new String[]{"q", "quit"}), new QuitController());
 
     private final MenuCommand menuCommand;
