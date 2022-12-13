@@ -12,7 +12,7 @@ public class HibernateManager implements DBTransactionManager {
     private HibernateManager() {
         if(entityManager == null) {
             try {
-                EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("homework");
+                EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("product");
                 entityManager = entityManagerFactory.createEntityManager();
             } catch (Exception e) {
                 e.printStackTrace();
