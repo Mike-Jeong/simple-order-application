@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29662908-6eab-410f-bb91-29402170c0dd" name="Changes" comment="- 전체 상품 목록 보기 기능 구현">
+    <list default="true" id="29662908-6eab-410f-bb91-29402170c0dd" name="Changes" comment="- 장바구니에 상품 담기 기능 구현">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PaymentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/ProductOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ProductOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/AddCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AddCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/AddCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/AddCartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/type/CustomError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/type/CustomError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/QuitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/QuitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/type/ApplicationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/type/ApplicationMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/type/MenuCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/type/MenuCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/HibernateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/HibernateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/InputManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/InputManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672239307477</updated>
-      <workItem from="1672239309530" duration="11168000" />
+      <workItem from="1672239309530" duration="11968000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init">
       <created>1672239817267</created>
@@ -133,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672584933234</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- 장바구니에 상품 담기 기능 구현">
+      <created>1672844871754</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672844871754</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +167,7 @@
     <MESSAGE value="Entity 와 repository 기초 작업" />
     <MESSAGE value="- 프로그램 시작점 설정 (OrderApplication)&#10;- 각 요청을 처리할 컨트롤러 생성 (ProductOrderController, QuitController)&#10;- 각 요청과 요청별 커멘드를 보다 효과적으로 관리하기 위한 enum(ApplicationMenu, MenuCommand) 생성&#10;- 에러를 효과적으로 처리하기 위해 CustomException 생성" />
     <MESSAGE value="- 전체 상품 목록 보기 기능 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 전체 상품 목록 보기 기능 구현" />
+    <MESSAGE value="- 장바구니에 상품 담기 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 장바구니에 상품 담기 기능 구현" />
   </component>
 </project>

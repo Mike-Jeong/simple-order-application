@@ -3,6 +3,7 @@ package org.example.controller;
 import org.example.domain.Product;
 import org.example.exception.CustomException;
 import org.example.service.AddCartService;
+import org.example.service.PaymentService;
 import org.example.util.InputManager;
 
 import java.util.HashMap;
@@ -12,16 +13,23 @@ import java.util.Map;
 public class ProductOrderController implements Controller {
 
     private final AddCartService addCartService;
+    private final PaymentService paymentService;
 
-    public ProductOrderController(AddCartService addCartService) {
+    public ProductOrderController(AddCartService addCartService, PaymentService paymentService) {
         this.addCartService = addCartService;
+        this.paymentService = paymentService;
     }
 
     @Override
     public void process() {
         printProductList();
+
         Map<Integer, Integer> cart = new HashMap<>();
         orderProduct(cart);
+
+        if (cart.size() != 0) {
+            purchaseProduct(cart);
+        }
     }
 
     private void printProductList() {
@@ -55,6 +63,27 @@ public class ProductOrderController implements Controller {
             } catch (CustomException e) {
                 System.out.println(e.getErrorDescription());
             }
+        }
+    }
+
+    private void purchaseProduct(Map<Integer, Integer> cart) {
+
+        StringBuilder resultBuilder = new StringBuilder();
+        Integer amount = paymentService.purchase(cart, resultBuilder);
+
+        if (amount != null) {
+            System.out.println("주문 내역:");
+            System.out.println("------------------------------------------");
+            System.out.println(resultBuilder);
+            System.out.println("------------------------------------------");
+            resultBuilder = new StringBuilder();
+            Integer charge = paymentService.createBill(amount, resultBuilder);
+            System.out.println(resultBuilder);
+            System.out.println("------------------------------------------");
+            System.out.println(paymentService.checkOut(charge));
+            System.out.println("------------------------------------------");
+            System.out.println();
+
         }
     }
 

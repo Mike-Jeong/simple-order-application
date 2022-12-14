@@ -6,7 +6,8 @@ public class InputManager {
 
     private final static Scanner sc = new Scanner(System.in);
 
-    private InputManager(){}
+    private InputManager() {
+    }
 
     public static String scanInput() {
         return sc.nextLine();

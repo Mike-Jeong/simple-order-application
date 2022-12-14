@@ -10,7 +10,7 @@ public class HibernateManager implements DBTransactionManager {
     private static EntityManager entityManager;
 
     private HibernateManager() {
-        if(entityManager == null) {
+        if (entityManager == null) {
             try {
                 EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("product");
                 entityManager = entityManagerFactory.createEntityManager();
@@ -20,8 +20,8 @@ public class HibernateManager implements DBTransactionManager {
         }
     }
 
-    public static synchronized HibernateManager getInstance(){
-        if(hibernateManager == null){
+    public static synchronized HibernateManager getInstance() {
+        if (hibernateManager == null) {
             hibernateManager = new HibernateManager();
         }
         return hibernateManager;

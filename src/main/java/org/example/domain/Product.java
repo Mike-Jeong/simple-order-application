@@ -19,7 +19,8 @@ public class Product {
     @Column(nullable = false)
     private int availableStock;
 
-    public Product() {}
+    public Product() {
+    }
 
     public Product(Integer productId, String productName, Integer productPrice, Integer availableStock) {
         this.productId = productId;
@@ -42,6 +43,10 @@ public class Product {
 
     public int getAvailableStock() {
         return availableStock;
+    }
+
+    public void updateAvailableStock(int availableStock) {
+        this.availableStock = availableStock;
     }
 
 }

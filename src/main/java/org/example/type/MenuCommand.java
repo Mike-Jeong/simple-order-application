@@ -1,6 +1,7 @@
 package org.example.type;
 
 import java.util.Arrays;
+
 class MenuCommand {
 
     private final String menu;
