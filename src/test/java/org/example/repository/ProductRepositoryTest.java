@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ProductRepositoryTest {
 
-    ProductRepository productRepository = new ProductRepositoryImpl(HibernateManager.getInstance());
+    ProductRepository productRepository;
 
     @BeforeEach
     void setUp() {
@@ -43,6 +43,7 @@ class ProductRepositoryTest {
         } catch (Exception e) {
             dbTransactionManager.transactionRollback();
         }
+        productRepository = new ProductRepositoryImpl(HibernateManager.getInstance());
     }
 
     @Test
